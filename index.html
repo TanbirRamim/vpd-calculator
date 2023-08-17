@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPD Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VPD Calculator</h1>
+        <form class="login-form">
+            <div class="input-group">
+                <label for="isMasters">Are you a Master's candidate?</label>
+                <select id="isMasters" onchange="toggleHSCInput()">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+            
+            <div class="input-group" id="hscInput">
+                <label for="hscResult">HSC Result:</label>
+                <input type="number" id="hscResult" placeholder="Enter HSC Result">
+            </div>
+            
+            <div class="input-group">
+                <label for="universityCgpa">University CGPA:</label>
+                <input type="number" id="universityCgpa" placeholder="Enter University CGPA">
+            </div>
+            
+            <div class="input-group">
+                <label for="minimumGrade">Minimum Passing Grade:</label>
+                <input type="number" id="minimumGrade" placeholder="Enter Minimum Passing Grade">
+            </div>
+            
+            <button type="button" onclick="calculateVPD()">Calculate</button>
+            
+            <p id="result"></p>
+        </form>
+    </div>
+    
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>An initiative by Safat Rezanur Majumder and Tanbir Hossain Ramim</p>
+        <p>Follow our socials</p>
+        <div class="social-section">
+            <div class="left-section">
+                <span>Safat:</span>
+                <a href="https://www.facebook.com/safatreza.99" target="_blank">
+                    <i class="fab fa-facebook facebook-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/safat-rezanur-majumder-8496a7273/" target="_blank">
+                    <i class="fab fa-linkedin linkedin-icon"></i>
+                </a>
+            </div>
+            <div class="right-section">
+                <span>Tanbir:</span>
+                <a href="https://www.facebook.com/tanbir.ramim" target="_blank">
+                    <i class="fab fa-facebook facebook-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tanbirramim/" target="_blank">
+                    <i class="fab fa-linkedin linkedin-icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
